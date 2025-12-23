@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://drdlaw.ca/sitemap.xml
