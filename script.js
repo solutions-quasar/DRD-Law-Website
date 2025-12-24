@@ -14,9 +14,9 @@ const CONFIG = {
         ]
     },
     theme: {
-        darkMode: true,
+        darkMode: false,
         font: "Inter, sans-serif",
-        primaryColor: "#1a1a1a",
+        primaryColor: "#0f172a",
         accentColor: "#c5a47e"
     },
     menu: [
