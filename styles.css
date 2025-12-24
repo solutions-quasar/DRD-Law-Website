@@ -243,6 +243,11 @@ p {
     z-index: 2;
 }
 
+.hero-ctas {
+    display: block;
+    margin-top: var(--space-6);
+}
+
 .hero-visual {
     position: relative;
     overflow: hidden;
