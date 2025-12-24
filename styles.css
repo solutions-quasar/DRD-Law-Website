@@ -226,8 +226,8 @@ p {
 }
 
 .hero-content {
-    flex: 3;
-    padding: var(--space-4) var(--space-8);
+    flex: 1;
+    padding: var(--space-8) var(--space-8) var(--space-8) max(var(--space-3), calc((100% - 1200px) / 2 + var(--space-3)));
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -236,7 +236,7 @@ p {
 }
 
 .hero-visual {
-    flex: 7;
+    flex: 1;
     position: relative;
     overflow: hidden;
     clip-path: polygon(15% 0, 100% 0, 100% 100%, 0 100%);
@@ -262,7 +262,7 @@ p {
     }
 
     .hero-content {
-        padding: var(--space-8) var(--space-4);
+        padding: var(--space-8) var(--space-3);
         text-align: center;
         align-items: center;
     }
