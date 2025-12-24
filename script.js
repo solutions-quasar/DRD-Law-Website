@@ -20,10 +20,10 @@ const CONFIG = {
         accentColor: "#c5a47e"
     },
     menu: [
-        { label: "Home", link: "index.html" },
-        { label: "Practice Areas", link: "practice-areas.html" },
-        { label: "FAQ", link: "faq.html" },
-        { label: "Contact", link: "contact.html" }
+        { label: "Home", link: "#" },
+        { label: "Practice Areas", link: "#practice-areas" },
+        { label: "FAQ", link: "#faq" },
+        { label: "Contact", link: "#contact" }
     ],
     hero: {
         title: "Legal services in New Brunswick.",

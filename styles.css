@@ -597,7 +597,7 @@ p {
 
 .team-info {
     flex: 6;
-    padding: var(--space-5);
+    padding: var(--space-8);
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -634,7 +634,7 @@ p {
     }
 
     .team-info {
-        padding: var(--space-4);
+        padding: var(--space-6);
         flex: auto;
     }
 }
