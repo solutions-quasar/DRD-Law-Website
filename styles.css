@@ -179,6 +179,13 @@ p {
     text-decoration: none;
     display: flex;
     align-items: center;
+    gap: var(--space-3);
+}
+
+.logo img {
+    height: 50px;
+    width: auto;
+    object-fit: contain;
 }
 
 .logo span {
