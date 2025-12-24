@@ -7,7 +7,7 @@
     <title>DRD Law | Legal Services in New Brunswick</title>
     <meta name="description"
         content="Delehanty Rinzler Druckman (DRD Law) offers personalized legal services in Real Estate, Business, and Immigration in Moncton, New Brunswick.">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css?v=1.4">
     <link rel="icon" href="favicon.png" type="image/png">
     <!-- Canonical & OG Tags -->
 </head>
@@ -17,7 +17,6 @@
         <div class="container top-bar">
             <div class="logo">
                 <a href="index.html">
-                    <img src="favicon.png" alt="DRD Law Logo">
                     <span>DRD Law</span>
                 </a>
             </div>
@@ -51,8 +50,6 @@
         <section id="practice-areas" class="container section-padding">
             <div class="section-header">
                 <h2>Our Practice Areas</h2>
-                <a href="practice-areas.html" class="link-arrow">View All Services</a>
-                <p>Specializing in Real Estate, Business, and Immigration law.</p>
             </div>
             <div class="practice-grid" id="practice-container">
                 <!-- Injected via script.js -->
@@ -69,23 +66,24 @@
         </section>
 
         <section id="why-choose-us" class="bg-alt section-padding">
-            <div class="container grid-2">
-                <div class="why-content">
+            <div class="container">
+                <div class="section-header text-center">
                     <h2>Why Choose DRD Law?</h2>
-                    <ul id="why-list" class="check-list">
-                        <!-- Injected via script.js -->
-                    </ul>
+                    <p>Building trust through excellence, experience, and personalized care.</p>
                 </div>
-                <div class="why-visual">
-                    <!-- Custom SVG Icon/Image -->
+                <div class="why-grid" id="why-grid">
+                    <!-- Injected via script.js -->
                 </div>
             </div>
         </section>
 
-        <section id="process" class="bg-alt section-padding">
-            <div class="container text-center">
-                <h2>How It Works</h2>
-                <div class="process-steps" id="process-container">
+        <section id="process" class="section-padding">
+            <div class="container">
+                <div class="section-header text-center">
+                    <h2>How It Works</h2>
+                    <p>Our streamlined process ensures transparency and precision at every stage.</p>
+                </div>
+                <div class="process-grid" id="process-grid">
                     <!-- Injected via script.js -->
                 </div>
             </div>
@@ -164,23 +162,47 @@
 
     <footer class="main-footer">
         <div class="container footer-content">
-            <div class="footer-brand">
+            <div class="footer-col brand-col">
                 <a href="index.html" class="footer-logo">DRD Law</a>
-                <p>© 2025 Delehanty Rinzler Druckman. All rights reserved.</p>
+                <p class="tagline">Personalized legal services for your peace of mind.</p>
+                <div class="footer-social">
+                    <a href="#" aria-label="LinkedIn">LinkedIn</a>
+                    <a href="#" aria-label="Facebook">Facebook</a>
+                </div>
             </div>
-            <div class="footer-links">
-                <div class="link-group">
-                    <h4>Pages</h4>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <nav class="footer-nav">
                     <a href="index.html">Home</a>
-                    <a href="practice-areas.html">Practice Areas</a>
-                    <a href="faq.html">FAQ</a>
-                    <a href="contact.html">Contact</a>
-                </div>
-                <div class="link-group">
-                    <h4>Legal</h4>
+                    <a href="#practice-areas">Practice Areas</a>
+                    <a href="#faq">Common Questions</a>
+                    <a href="#contact">Contact Us</a>
+                </nav>
+            </div>
+            <div class="footer-col">
+                <h4>Practice Areas</h4>
+                <nav class="footer-nav">
+                    <a href="#practice-areas">Business Law</a>
+                    <a href="#practice-areas">Real Estate Law</a>
+                    <a href="#practice-areas">Immigration Law</a>
+                    <a href="#practice-areas">Wills & Estates</a>
+                </nav>
+            </div>
+            <div class="footer-col contact-col">
+                <h4>Contact & Legal</h4>
+                <p>720 Main Street, Suite 101<br>Moncton, NB E1C 1E4</p>
+                <p><a href="tel:+15068573594">(506) 857-3594</a></p>
+                <p><a href="mailto:reception@drdlaw.ca">reception@drdlaw.ca</a></p>
+                <div class="legal-links">
                     <a href="#">Privacy Policy</a>
-                    <a href="#">Terms of Service</a>
+                    <span class="separator">•</span>
+                    <a href="#">Terms</a>
                 </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2025 Delehanty Rinzler Druckman. All rights reserved.</p>
             </div>
         </div>
     </footer>

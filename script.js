@@ -1,6 +1,6 @@
 const CONFIG = {
     business: {
-        name: "Delehanty Rinzler Druckman",
+        name: "DRD Law",
         brand: "DRD Law",
         phone: "(506) 857-3594",
         email: "reception@drdlaw.ca",
@@ -10,7 +10,7 @@ const CONFIG = {
         secondaryActions: [
             { label: "Call", icon: "phone", link: "tel:+15068573594" },
             { label: "Email", icon: "message", link: "mailto:reception@drdlaw.ca" },
-            { label: "Directions", icon: "map", link: "https://maps.app.goo.gl/..." }
+            { label: "Directions", icon: "map", link: "https://maps.app.goo.gl/vcard" }
         ]
     },
     theme: {
@@ -32,10 +32,10 @@ const CONFIG = {
         bgImage: "images/drd_law_hero_bg.png"
     },
     practiceAreas: [
-        { title: "BUSINESS LAW", description: "Comprehensive legal support for entrepreneurs and established companies.", icon: "briefcase", link: "#contact" },
-        { title: "IMMIGRATION LAW", description: "Expert guidance for individuals and employers navigating Canadian immigration.", icon: "globe", link: "#contact" },
-        { title: "REAL ESTATE LAW", description: "Residential & Commercial real estate services throughout New Brunswick.", icon: "home", link: "#contact" },
-        { title: "WILLS & ESTATES", description: "Strategic planning to protect your assets and provide for your loved ones.", icon: "document", link: "#contact" }
+        { title: "BUSINESS LAW", description: "Comprehensive legal support for entrepreneurs and established companies.", icon: "briefcase", image: "images/business_v1.png", link: "#contact" },
+        { title: "IMMIGRATION LAW", description: "Expert guidance for individuals and employers navigating Canadian immigration.", icon: "globe", image: "images/immigration_v1.png", link: "#contact" },
+        { title: "REAL ESTATE LAW", description: "Residential & Commercial real estate services throughout New Brunswick.", icon: "home", image: "images/real_estate_v1.png", link: "#contact" },
+        { title: "WILLS & ESTATES", description: "Strategic planning to protect your assets and provide for your loved ones.", icon: "document", image: "images/wills_v1.png", link: "#contact" }
     ],
     reviews: [
         {
@@ -68,16 +68,48 @@ const CONFIG = {
         }
     ],
     whyChooseUs: [
-        "Client-focused visionary team approach",
-        "Personalized, detail-oriented legal services",
-        "Deep roots and expertise in New Brunswick law",
-        "Passionate advocacy and commitment to integrity"
+        {
+            title: "Visionary Team",
+            description: "A collaborative approach that combines diverse perspectives to find the best legal solutions.",
+            icon: `<svg viewBox="0 0 24 24" width="32" height="32" stroke="currentColor" stroke-width="1.5" fill="none"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>`
+        },
+        {
+            title: "Personalized Service",
+            description: "Detail-oriented legal support tailored specifically to your unique personal or business goals.",
+            icon: `<svg viewBox="0 0 24 24" width="32" height="32" stroke="currentColor" stroke-width="1.5" fill="none"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>`
+        },
+        {
+            title: "Deep expertise",
+            description: "Decades of experience and profound knowledge of New Brunswick's legal landscape.",
+            icon: `<svg viewBox="0 0 24 24" width="32" height="32" stroke="currentColor" stroke-width="1.5" fill="none"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>`
+        },
+        {
+            title: "Absolute Integrity",
+            description: "Passionate advocacy built on a foundation of transparency, ethics, and excellence.",
+            icon: `<svg viewBox="0 0 24 24" width="32" height="32" stroke="currentColor" stroke-width="1.5" fill="none"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>`
+        }
     ],
     steps: [
-        { title: "Consultation", description: "Discuss your legal needs with our expert team." },
-        { title: "Strategy", description: "We develop a personalized legal plan tailored to your goals." },
-        { title: "Action", description: "Executing the strategy with precision and regular updates." },
-        { title: "Resolution", description: "Achieving the best possible outcome for your case." }
+        {
+            title: "Consultation",
+            description: "Discuss your legal needs with our expert team.",
+            icon: `<svg viewBox="0 0 24 24" width="36" height="36" stroke="currentColor" stroke-width="1.2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 1 1-7.6-13.6 1.4 1.4 0 0 1 1.2 2.7 5.7 5.7 0 1 0 7.3 7.1Z"/><path d="M17 3.5a1.4 1.4 0 1 1 2.8 0 1.4 1.4 0 1 1-2.8 0Z"/><path d="M21 2v4"/><path d="M19 4h4"/></svg>`
+        },
+        {
+            title: "Strategy",
+            description: "We develop a personalized legal plan tailored to your goals.",
+            icon: `<svg viewBox="0 0 24 24" width="36" height="36" stroke="currentColor" stroke-width="1.2" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 2v4"/><path d="M12 18v4"/><path d="M4.93 4.93l2.83 2.83"/><path d="M16.24 16.24l2.83 2.83"/><path d="M2 12h4"/><path d="M18 12h4"/><path d="M4.93 19.07l2.83-2.83"/><path d="M16.24 7.76l2.83-2.83"/><circle cx="12" cy="12" r="3"/></svg>`
+        },
+        {
+            title: "Action",
+            description: "Executing the strategy with precision and regular updates.",
+            icon: `<svg viewBox="0 0 24 24" width="36" height="36" stroke="currentColor" stroke-width="1.2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/><path d="M12 7l1.5 3"/><path d="M18 10l-2.5 2.5"/><path d="M16 17l-3-1.5"/><path d="M8 17l3-1.5"/><path d="M6 10l2.5 2.5"/></svg>`
+        },
+        {
+            title: "Resolution",
+            description: "Achieving the best possible outcome for your case.",
+            icon: `<svg viewBox="0 0 24 24" width="36" height="36" stroke="currentColor" stroke-width="1.2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>`
+        }
     ],
     faq: [
         { question: "How do I request a consultation?", answer: "You can request a consultation by filling out our contact form, calling us at (506) 857-3594, or emailing reception@drdlaw.ca." },
@@ -149,11 +181,15 @@ function renderReviews() {
 }
 
 function renderWhyChooseUs() {
-    const list = document.getElementById('why-list');
-    if (!list) return;
+    const container = document.getElementById('why-grid');
+    if (!container) return;
 
-    list.innerHTML = CONFIG.whyChooseUs.map(item => `
-        <li>${item}</li>
+    container.innerHTML = CONFIG.whyChooseUs.map(item => `
+        <div class="why-card">
+            <div class="why-icon">${item.icon}</div>
+            <h3>${item.title}</h3>
+            <p>${item.description}</p>
+        </div>
     `).join('');
 }
 
@@ -163,20 +199,28 @@ function renderPracticeAreas() {
 
     container.innerHTML = CONFIG.practiceAreas.map(area => `
         <div class="practice-card">
-            <h3>${area.title}</h3>
-            <p>${area.description}</p>
-            <a href="${area.link}" class="link-arrow">Learn More</a>
+            <div class="practice-card-image">
+                <img src="${area.image}" alt="${area.title}">
+            </div>
+            <div class="practice-card-content">
+                <h3>${area.title}</h3>
+                <p>${area.description}</p>
+                <a href="${area.link}" class="link-arrow">Learn More →</a>
+            </div>
         </div>
     `).join('');
 }
 
 function renderProcess() {
-    const container = document.getElementById('process-container');
+    const container = document.getElementById('process-grid');
     if (!container) return;
 
     container.innerHTML = CONFIG.steps.map((step, index) => `
         <div class="process-step">
-            <div class="step-num">${index + 1}</div>
+            <div class="step-icon-wrapper">
+                <div class="step-num">${index + 1}</div>
+                <div class="step-icon">${step.icon}</div>
+            </div>
             <h3>${step.title}</h3>
             <p>${step.description}</p>
         </div>
@@ -206,15 +250,37 @@ function renderFAQ() {
     const container = document.getElementById('faq-container');
     if (!container) return;
 
-    container.innerHTML = CONFIG.faq.map(item => `
+    container.innerHTML = CONFIG.faq.map((item, index) => `
         <div class="faq-item">
-            <button class="faq-question">${item.question}</button>
+            <button class="faq-question" aria-expanded="false" onclick="toggleFAQ(this)">
+                <span>${item.question}</span>
+                <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M6 9l6 6 6-6" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
             <div class="faq-answer">
                 <p>${item.answer}</p>
             </div>
         </div>
     `).join('');
 }
+
+function toggleFAQ(button) {
+    const item = button.closest('.faq-item');
+    const isActive = item.classList.contains('active');
+
+    // Close all others (optional - standard accordion behavior)
+    document.querySelectorAll('.faq-item').forEach(i => {
+        i.classList.remove('active');
+        i.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
+    });
+
+    if (!isActive) {
+        item.classList.add('active');
+        button.setAttribute('aria-expanded', 'true');
+    }
+}
+
 
 function renderBottomBar() {
     const bar = document.getElementById('bottom-floating-bar');
