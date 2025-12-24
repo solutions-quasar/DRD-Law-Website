@@ -150,6 +150,26 @@ document.addEventListener('DOMContentLoaded', () => {
     renderMobileMenu();
     setupInteractions();
     injectJSONLD();
+
+    // Scroll Fade Interaction
+    let isScrolling;
+    const header = document.getElementById('main-header');
+    const bottomBar = document.getElementById('bottom-floating-bar');
+
+    window.addEventListener('scroll', () => {
+        // Add fade-out class on scroll start
+        header.classList.add('fade-out');
+        if (bottomBar) bottomBar.classList.add('fade-out');
+
+        // Clear timeout
+        window.clearTimeout(isScrolling);
+
+        // Set timeout to remove fade-out class after scroll stops
+        isScrolling = setTimeout(() => {
+            header.classList.remove('fade-out');
+            if (bottomBar) bottomBar.classList.remove('fade-out');
+        }, 150); // 150ms delay
+    }, { passive: true });
 });
 
 function renderHero() {
