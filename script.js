@@ -29,18 +29,43 @@ const CONFIG = {
         title: "Legal services in New Brunswick.",
         subtitle: "A client-focused Law Firm in Moncton working together as a visionary team to provide personalized service in Real Estate, Business, and Immigration.",
         cta: { label: "Request a Consultation", link: "#contact" },
-        bgImage: "images/drd_law_hero_bg.webp"
+        bgImage: "images/drd_law_hero_bg.png"
     },
     practiceAreas: [
-        { title: "Real Estate", description: "Residential & Commercial real estate services throughout New Brunswick.", icon: "home", link: "practice-areas.html#real-estate" },
-        { title: "Business Law", description: "Comprehensive legal support for entrepreneurs and established companies.", icon: "briefcase", link: "practice-areas.html#business" },
-        { title: "Immigration", description: "Expert guidance for individuals and employers navigating Canadian immigration.", icon: "globe", link: "practice-areas.html#immigration" },
-        { title: "Wills & Estates", description: "Strategic planning to protect your assets and provide for your loved ones.", icon: "document", link: "practice-areas.html#wills" },
-        { title: "Corporate & Commercial", description: "Professional advice on corporate structure, contracts, and commercial transactions.", icon: "building", link: "practice-areas.html#corporate" }
+        { title: "BUSINESS LAW", description: "Comprehensive legal support for entrepreneurs and established companies.", icon: "briefcase", link: "#contact" },
+        { title: "IMMIGRATION LAW", description: "Expert guidance for individuals and employers navigating Canadian immigration.", icon: "globe", link: "#contact" },
+        { title: "REAL ESTATE LAW", description: "Residential & Commercial real estate services throughout New Brunswick.", icon: "home", link: "#contact" },
+        { title: "WILLS & ESTATES", description: "Strategic planning to protect your assets and provide for your loved ones.", icon: "document", link: "#contact" }
     ],
     reviews: [
-        { name: "REPLACE WITH REAL REVIEW", text: "Exceptional service and unrivaled customer satisfaction. Highly recommended for any legal needs in Moncton.", rating: 5 },
-        { name: "REPLACE WITH REAL REVIEW", text: "The team at DRD Law made the immigration process smooth and stress-free. Very professional.", rating: 5 }
+        {
+            name: "Dianne Griffin",
+            title: "HR Manager",
+            company: "3 Points Aviation",
+            text: "We have had the great pleasure of working with your firm on the immigration of Dimitri Ovchinikov. Maggie has been our contact and I have to say it has been a terrific experience, one of helpful, sense of urgency and knowledge. Sincere thanks to you and your staff.",
+            rating: 5
+        },
+        {
+            name: "Angie Donahoe",
+            title: "Human Resources",
+            company: "Corey Craig Group",
+            text: "As Director of Human Resources for a large franchisee, we relied on Nicole Druckman and her experienced Team to help us through the immigration process. Nicole is highly knowledgeable and her efficiency and professionalism is second to none.",
+            rating: 5
+        },
+        {
+            name: "Rupert Tingley",
+            title: "Past President and CEO",
+            company: "Marine Atlantic",
+            text: "My experiences with Nicole Druckman have all been outstanding. She is easy to speak with and cares for her clients. Her experience and meticulous work, along with her great personality, make it a pleasure to do business.",
+            rating: 5
+        },
+        {
+            name: "Fred Monaghan",
+            title: "President",
+            company: "Burger King Moncton",
+            text: "Nicole Druckman has been handling Immigration Applications for my company for the past 4 years. She takes the time to explain possible scenarios and her tireless work ethic and drive for perfection makes her a great asset for us.",
+            rating: 5
+        }
     ],
     whyChooseUs: [
         "Client-focused visionary team approach",
@@ -115,7 +140,10 @@ function renderReviews() {
         <div class="review-card">
             <div class="stars">★★★★★</div>
             <p>"${review.text}"</p>
-            <h4>${review.name}</h4>
+            <div class="review-attribution">
+                <h4>${review.name}</h4>
+                <p class="review-meta">${review.title}${review.company ? `, ${review.company}` : ''}</p>
+            </div>
         </div>
     `).join('');
 }
@@ -193,9 +221,18 @@ function renderBottomBar() {
     if (!bar) return;
 
     bar.innerHTML = `
-        <button id="menu-toggle" aria-label="Menu">Menu</button>
-        <a href="tel:+15068573594" class="bar-link">Call</a>
-        <a href="#contact" class="bar-link">Message</a>
+        <a href="#" class="bar-link" id="menu-toggle">
+            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+            <span>Menu</span>
+        </a>
+        <a href="tel:+15068573594" class="bar-link">
+            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            <span>Call</span>
+        </a>
+        <a href="#contact" class="bar-link">
+            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+            <span>Message</span>
+        </a>
     `;
 }
 
